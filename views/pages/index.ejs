@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--HOME PAGE-->
+<html lang="en-us">
+
+<head>
+    <title>Rachel Bichsel | Home Page</title>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body>
+    
+    <header>
+
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div id="primNav" class="overlay-content headNav">
+                    <a href="index.html" class="current">Home</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+    <div id="main">
+        <h1 class="main-h1 top">Hello.</h1>
+        <h1 class="main-h1">I'm Rachel Bichsel.</h1>
+        <h2>Web Designer and Developer</h2>
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+        <div id="box-3"></div>
+        <div id="box-4"></div>
+        <!---<div id="block-2"></div>--->
+    </div>
+    <div id="project-main">
+        <h1>Projects</h1>
+
+        <h2 class="proj-head" id="development">Development</h2>
+        <div class="grid-container">
+            <a class="grid-item" class="blurImage" href="projects/surviving-parenthood.html"><img src="images/parenthood.JPG" alt="Nodejs-Surviving Parenthood"></a>
+            <a class="grid-item" class="blurImage" href="projects/hikers.html"><img src="images/hikers.jpg" alt="Hikers N Utah"></a>
+            <a class="grid-item" class="blurImage" href="projects/haunted.html"><img src="images/haunted-app-f.jpg" alt="Mobile Website"></a>
+            <a class="grid-item" class="blurImage" href="projects/acme.html"><img src="images/acme.jpg" alt="Acme website"></a>
+            <a class="grid-item" class="blurImage" href="projects/mountain-spoke.html"><img src="images/mountain-spoke.jpg" alt="The mountain spoke"></a>
+
+
+        </div>
+        <!-- div below is to make sure that these boxes are aligned with boxes in design section-->
+        <!--				<div class="grid-item empty"></div>-->
+
+        <h2 class="proj-head" id="design">Design</h2>
+
+        <div class="grid-container">
+            <a class="grid-item" href="projects/silly-bee-songs.html"><img src="images/silly-bee-songs.jpg" alt="Silly Bee Songs logo"></a>
+            <a class="grid-item" href="projects/sand-canyon.html"><img src="images/sand-canyon.jpg" alt="the inn at sand canyon logo"></a>
+            <a class="grid-item" href="projects/cowboys.html"><img src="images/cowboys.JPG" alt="cowboy's smokehouse"></a>
+
+            <a class="grid-item" href="projects/poster.html"><img src="images/captivate.jpg" alt="Poster example"></a>
+            <a class="grid-item" href="projects/activity-book.html"><img src="images/activity-book.jpg" alt="ladybug book"></a>
+        </div>
+    </div>
+</main>
+    <footer>
+        <% include ../partials/footer.ejs %>   
+    </footer>
+
+    <script src="hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--RESUME PAGE-->
+<html lang="en-us">
+	<head>
+    <title>Rachel Bichsel | Resume</title>
+    <% include ../partials/head.ejs %>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide headNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume">
+            <img src="bichsel-resume-2020.jpg">
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer.ejs %>   
+    </footer>
+    <script src="hamburger.js"></script>
+</body>
+</html>

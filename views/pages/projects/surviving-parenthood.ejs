@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- PICTURE BOOK PAGE -->
+<html lang="en-us">
+
+<head>
+    <title>Rachel Bichsel | Surviving Parenthood</title>
+    <link href="../styles/main.css" rel="stylesheet">
+
+    <link href="../styles/medium.css" rel="stylesheet">
+
+    <link href="../styles/large.css" rel="stylesheet">
+    <link href="../styles/normalize.css" rel="stylesheet">
+
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide headNav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li class="current"><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="projects-main">
+        <div class="flex-item">
+            <img class="images" src="../images/surviving-parenthood.JPG" alt="">
+        </div>
+        <div class="flex-item2">
+            <h1 class="projects-h1">Surviving Parenthood Website</h1>
+            <h2>Description</h2>
+            <p>For this project, I used Node.js, to reload the same page with different displayed depending on what is selected. I also incorporated a database into the website. This made it possible for users to add a tip to the current ones already posted.</p>
+            <h2>Programs Used</h2>
+            <p>HTML, CSS, Node.js, Photoshop</p>
+            <h2>View Website</h2>
+            <a class="projects-link" href="https://gentle-sierra-19503.herokuapp.com/" target="_blank">Surviving Parenthood Website</a> <br />
+            <a class="back" href="../projects.html">Back to Projects Page</a>
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer.ejs %>   
+    </footer>
+    <script src="hamburger.js"></script>
+</body>
+
+</html>

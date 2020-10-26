@@ -1,0 +1,397 @@
+@media only screen and (min-width: 600px) {
+
+    .hamburger,
+    a.closebtn {
+        display: none;
+    }
+
+    #primNav.hide {
+        display: block;
+    }
+
+
+
+    .headNav {
+        margin-bottom: 10px;
+
+        letter-spacing: 1px;
+    }
+
+    .overlay .closebtn {
+        font-size: 1.2em;
+    }
+
+    #primNav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: .5em;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        font-size: 3em;
+    }
+
+    #primNav a {
+        padding: .3em 0px;
+    }
+
+    .headNav a {
+        display: inline-block;
+
+        list-style: outside none none;
+
+        list-style: none;
+
+        text-transform: uppercase;
+
+        margin: 0.5em 1em;
+
+        padding: 0;
+
+    }
+
+    /* Main navigation animation*/
+    .message {
+        color: red;
+    }
+
+    .headNav a {
+        color: #000000;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        padding: 5px 0px;
+
+    }
+
+    .headNav a:before,
+    .headNav a:after {
+        height: 4px;
+        position: absolute;
+        content: '';
+        transition: all .45s ease;
+        background-color: #8860D0;
+        width: 0;
+    }
+
+    .headNav a:before {
+        top: 0;
+        left: 0;
+    }
+
+    .headNav a:after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .headNav a:hover,
+    .headNav .current a {
+        color: #000000;
+    }
+
+    .headNav a:hover:before,
+    .headNav .current a:before,
+    .headNav a:hover:after,
+    .headNav .current a:after {
+        width: 100%;
+    }
+
+    .overlay {
+        height: unset;
+        width: unset;
+        position: unset;
+        z-index: unset;
+        left: unset;
+        top: unset;
+        overflow-y: unset;
+        transition: unset;
+
+    }
+
+
+    .overlay-content {
+        position: unset;
+        top: unset;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+    /*==============HEADER============*/
+    header {
+
+        height: 70px;
+    }
+
+    header img {
+        position: relative;
+
+        width: 80px;
+
+        z-index: 3;
+
+        left: 50px;
+
+        bottom: 35px;
+
+    }
+
+    nav {
+        margin-top: 0px;
+    }
+
+    #primNav li a {
+        display: flex;
+        padding: .3rem 2%;
+        text-decoration: none;
+        border-top: none;
+    }
+
+    h1 {
+
+        padding-top: 10px;
+
+
+        letter-spacing: .05em;
+        margin: 0px;
+
+        font-size: 3.7em;
+
+        color: black;
+        text-align: left;
+    }
+
+    .main-h1 {
+        font-size: 3em;
+        padding-left: 10%;
+        position: relative;
+        z-index: 3;
+        text-align: left;
+        color: white;
+    }
+
+    .top {
+        font-size: 12em;
+        padding-top: 20px;
+        top: 20px;
+        right: 5px;
+        animation-name: to-white;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        margin-bottom: 0px;
+    }
+
+    @keyframes to-white {
+        0% {
+            color: black;
+        }
+
+        100% {
+            color: white;
+        }
+    }
+
+
+
+    #main {
+        margin-bottom: 80px;
+    }
+
+    #main h2 {
+        position: relative;
+        text-align: center;
+        padding-left: 10%;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        margin: 0px;
+        z-index: 3;
+        top: 20px;
+    }
+
+    #box-1 {
+        top: 200px;
+        z-index: 1;
+        height: 150px;
+        width: 650px;
+        animation-name: box-one;
+        animation-duration: 5s;
+    }
+
+    @keyframes box-one {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #box-2 {
+        position: absolute;
+        top: 390px;
+        z-index: 1;
+        left: 0px;
+        height: 60px;
+        width: 595px;
+        animation-name: box-two;
+        animation-duration: 7s;
+    }
+
+    @keyframes box-two {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #box-3 {
+        position: absolute;
+        top: 475px;
+        z-index: 1;
+        right: 0px;
+        left: unset;
+        height: 45px;
+        width: 80%;
+        animation-name: box-three;
+        animation-duration: 6s;
+    }
+
+    @keyframes box-three {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    #box-4 {
+        position: absolute;
+        top: 540px;
+        z-index: 1;
+        right: 0px;
+        height: 15px;
+        width: 605px;
+        animation-name: box-four;
+        animation-duration: 6s;
+    }
+
+    @keyframes box-four {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+
+
+
+    /*==============LINK STYLE============*/
+    .current {
+        color: #000000;
+    }
+
+    header nav a:visited {
+        color: #696969;
+    }
+
+    header nav a:hover {
+        color: #000000;
+
+    }
+
+    header nav a:active {
+        color: #000000;
+    }
+
+    footer nav a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer nav a:visited {
+        color: #000000;
+    }
+
+    footer nav a:hover {
+        color: #000000;
+
+    }
+
+    footer nav a:active {
+        color: #000000;
+    }
+
+
+    .profile {
+        position: absolute;
+        left: 50px;
+        top: 150px;
+        z-index: 3;
+        text-align: none;
+    }
+
+
+
+    /*==============PROJECTS-FILES============*/
+    .flex {
+     flex-direction: row;
+ }
+    
+    
+    .projects-main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #project-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #project-info p,
+    #project-info li {
+        text-align: left;
+    }
+
+    .back {
+        margin-top: 50px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    #project-header {
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #project-header h1{
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #icons {
+        margin-left: 50px;
+    }
+
+    #contact-flex {
+        margin-top: 50px;
+        display: flex;
+        display: row;
+        justify-content: space-around;
+    }
+}

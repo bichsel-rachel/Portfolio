@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- HAUNTED HOUSE PAGE -->
+<html lang="en-us">
+
+<head>
+    <title>Rachel Bichsel | Haunted House Riddle</title>
+    <link href="../styles/main.css" rel="stylesheet">
+
+    <link href="../styles/medium.css" rel="stylesheet">
+
+    <link href="../styles/large.css" rel="stylesheet">
+    <link href="../styles/normalize.css" rel="stylesheet">
+
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide headNav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li class="current"><a href="../projects.html">Projects</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="projects-main">
+        <div class="flex-item">
+            <img class="images" src="../images/haunted-app.png" alt="Haunted House App">
+        </div>
+        <div class="flex-item2">
+            <h1 class="projects-h1">Haunted House Riddle</h1>
+            <h2>Description</h2>
+            <p>This is a single page mobile web application that was done all through JavaScript functions. The purpose of this project was to apply design principles that are supposed to be viewed through a phone.</p>
+            <h2>Programs/Software Used</h2>
+            <p>Photoshop, HTML, CSS, JavaScript</p>
+            <h2>Link to Website</h2>
+            <a class="projects-link" href="https://bichsel-rachel.github.io/classes/cit261/final/index.html" target="_blank">View Project</a> <br />
+            <a class="back" href="../projects.html">Back to Projects Page</a>
+        </div>
+    </main>
+    <footer>
+        <% include ../partials/footer.ejs %>   
+    </footer>
+    <script src="hamburger.js"></script>
+</body>
+
+</html>

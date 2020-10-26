@@ -1,0 +1,343 @@
+@media only screen and (min-width: 768px) {
+
+
+
+    body {
+        font-family: Mukta, sans-serif;
+
+        margin: 0px;
+
+        min-width: 870px;
+    }
+
+    main,
+    footer {
+        text-align: center;
+
+    }
+
+
+    /*==============HEADER============*/
+    header {
+
+        height: 70px;
+
+
+    }
+
+    header nav {
+        text-align: right;
+        padding-right: 10%;
+    }
+
+    header img {
+        position: relative;
+
+        width: 80px;
+
+        z-index: 3;
+
+        left: 50px;
+
+        bottom: 35px;
+
+    }
+    
+    #primNav {
+        justify-content: flex-end;
+        
+    }
+
+    h1 {
+
+        padding-top: 10px;
+        letter-spacing: .05em;
+        margin: 0px;
+
+        font-size: 3.7em;
+
+        color: black;
+        text-align: left;
+    }
+
+    .main-h1 {
+        font-size: 5em;
+        position: relative;
+        z-index: 3;
+        text-align: left;
+        bottom: 20px;
+    }
+
+    .top {
+        font-size: 15em;
+        top: 10px;
+        animation-name: to-white;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        margin-bottom: 25px;
+    }
+
+    @keyframes to-white {
+        0% {
+            color: black;
+        }
+        100% {
+            color: white;
+        }
+    }
+
+
+
+    
+
+    #main h2 {
+        position: relative;
+        padding-top: 0px;
+        margin-top: 50px;
+        z-index: 3;
+        font-size: 3em;
+        top: 0px;
+    }
+
+    #box-1 {
+        position: absolute;
+        top: 175px;
+        z-index: 1;
+        right: 0px;
+        height: 210px;
+        width: 95%;
+        animation-name: box-one;
+        animation-duration: 5s;
+    }
+
+    
+
+    #box-2 {
+        position: absolute;
+        top: 425px;
+        z-index: 1;
+        right: 0px;
+        height: 120px;
+        width: 90%;
+        animation-name: box-two;
+        animation-duration: 7s;
+    }
+
+    
+
+    #box-3 {
+        position: absolute;
+        top: 600px;
+        z-index: 1;
+        left: 0px;
+        height: 60px;
+        width: 100%;
+        animation-name: box-three;
+        animation-duration: 7s;
+    }
+
+    
+
+    #box-4 {
+        position: absolute;
+        top: 642px;
+        z-index: 1;
+        right: 0px;
+        height: 30px;
+        width: 70%;
+        animation-name: box-four;
+        animation-duration: 6s;
+    }
+
+
+
+
+    /*==============MAIN============*/
+    main {
+
+        width: 100%;
+
+        margin-left: 0px;
+
+        margin-right: 0px;
+
+        color: black;
+
+        background-color: white;
+
+    }
+
+    
+
+    
+    .profile {
+        position: absolute;
+        right: 200px;
+        top: 150px;
+        z-index: 3;
+    }
+
+    /*==============FOOTER============*/
+    footer {
+
+        color: black;
+
+        font-size: 1em;
+
+        padding-top: 25px;
+
+        padding-bottom: 20px;
+
+        line-height: .3em;
+    }
+
+    footer div {
+        display: inline-block;
+    }
+
+    footer nav {
+        text-align: center;
+
+        position: relative;
+    }
+
+    footer nav ul {
+        margin-bottom: 10px;
+    }
+
+    footer nav li {
+        display: inline;
+
+        letter-spacing: .07em;
+
+        list-style: none;
+
+        margin-right: 30px;
+    }
+
+    footer p {
+        padding-top: 10px;
+
+        letter-spacing: .07em;
+    }
+
+    
+    /*==============PROJECTS============*/
+    #project-main {
+        padding-bottom: 30px;
+
+    }
+
+   
+    #development, #design {
+            margin-top: 50px;
+            text-align: center;
+            
+        }
+
+
+    .proj-head {
+        margin-bottom: 30px;
+        padding: 10px 0px 10px 0px;
+        margin-top: 5px;
+        font-size: 2.5em;
+        text-align: left;
+        width: 300px;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        justify-items: center;
+        padding-bottom: 70px;
+         
+
+    }
+
+
+    .grid-item:hover {
+        box-shadow: 1px 1px 15px 1px #DCDCDC, 1px 1px 15px 1px #DCDCDC;
+    }
+
+    
+    .blurImage {
+        width: 300px;
+        height: auto;
+        display: inline-block;
+        transition: .3s;
+        margin: 4px;
+    }
+
+    .blurImage img {
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        border-radius: 4px;
+    }
+
+    .blurImage:hover img {
+        filter: blur(2px) brightness(60%);
+    }
+
+    .blurImage :not(img) {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        transition: .3s;
+        text-decoration: none;
+    }
+
+    .blurImage h3 {
+        top: 50%;
+        text-decoration: none;
+        color: black;
+    }
+
+    .blurImage:hover :not(img) {
+        opacity: 1;
+    }
+
+    .empty {
+        width: 218px;
+        box-shadow: none;
+    }
+
+    .empty:hover {
+        box-shadow: none;
+    }
+
+    /*==============PROJECTS-FILES============*/
+
+
+    
+    /*==============RESUME============*/
+    .resume {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .clear {
+        clear: both;
+    }
+
+    .resume-content h4 {
+        margin-bottom: 0px;
+    }
+
+    .resume-content h2 {
+        margin-bottom: 0px;
+    }
+
+    .resume-content ul {
+        margin-top: 0px;
+    }
+}
