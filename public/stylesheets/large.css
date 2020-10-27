@@ -70,6 +70,7 @@
 
     .top {
         font-size: 15em;
+        top: 10px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
