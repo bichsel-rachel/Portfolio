@@ -168,6 +168,7 @@
     }
 
     .main-h1 {
+        top: -60px;
         font-size: 3em;
         padding-left: 10%;
         position: relative;
@@ -178,13 +179,16 @@
 
     .top {
         font-size: 12em;
-        padding-top: 20px;
-        top: 20px;
+        top: 10px;
         right: 5px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
         margin-bottom: 0px;
+    }
+
+    #main h2 {
+        top: 100px;
     }
 
     @keyframes to-white {

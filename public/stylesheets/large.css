@@ -65,16 +65,24 @@
         position: relative;
         z-index: 3;
         text-align: left;
-        bottom: 20px;
     }
 
     .top {
         font-size: 15em;
-        top: 10px;
+        top: -10px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
         margin-bottom: 25px;
+    }
+
+    .bottom {
+        top: -120px;
+    }
+
+    #main h2 {
+        top: 10px;
+        margin-top: 0px;
     }
 
     @keyframes to-white {
