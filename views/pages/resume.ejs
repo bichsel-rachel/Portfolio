@@ -9,20 +9,24 @@
 
 <body>
     <header>
+
         <nav>
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-            <ul id="primNav" class="hide headNav">
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div id="primNav" class="overlay-content headNav">
+                    <a href="/" class="current">Home</a>
+                    <a href="/resume">Resume</a>
+                    <a href="/#project-main">Projects</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
         </nav>
     </header>
 
     <main>
         <div class="resume">
-            <img src="bichsel-resume-2020.jpg">
+            <img src="images/bichsel-resume-2020.jpg">
         </div>
     </main>
     <footer>

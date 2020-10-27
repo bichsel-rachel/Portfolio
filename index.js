@@ -25,6 +25,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) =>
     res.render('pages/index'));
 
+    app.get('/resume', (req, res) =>
+    res.render('pages/resume'));
+
     sftp.connect({
         host: 'rachelbichsel.com',
         port: '18765',
