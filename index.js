@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const controller = require('./controller.js');
 const app = express();
 const { Pool } = require('pg');
-let Client = require('ssh2-sftp-client');
-let sftp = new Client();
 
 
 // set the view engine to ejs
@@ -28,18 +26,35 @@ app.get('/', (req, res) =>
     app.get('/resume', (req, res) =>
     res.render('pages/resume'));
 
-    sftp.connect({
-        host: 'rachelbichsel.com',
-        port: '18765',
-        username: process.env.USERNAME,
-        password: process.env.PASSWORD
-      }).then(() => {
-        return sftp.list('/');
-      }).then(data => {
-        console.log(data, 'the data info');
-      }).catch(err => {
-        console.log(err, 'catch error');
-      });
+//Project Pages
+app.get('projects/burger_motion', (req, res) =>
+    res.render('pages/projects/burger-motion'));
+
+    app.get('projects/surviving_parenthood', (req, res) =>
+    res.render('pages/projects/surviving-parenthood'));
+
+    app.get('projects/hikers', (req, res) =>
+    res.render('pages/projects/hikers'));
+
+    app.get('projects/haunted', (req, res) =>
+    res.render('pages/projects/haunted'));
+
+    app.get('projects/mountain_spoke', (req, res) =>
+    res.render('pages/projects/mountain-spoke'));
+
+    app.get('projects/cowboys', (req, res) =>
+    res.render('pages/projects/cowboys'));
+
+    pp.get('projects/manual_designers', (req, res) =>
+    res.render('pages/projects/manual-designers'));
+
+    pp.get('projects/pest_control', (req, res) =>
+    res.render('pages/projects/pest-control'));
+
+    pp.get('projects/gresham_fencing', (req, res) =>
+    res.render('pages/projects/gresham_fencing'));
+
+   
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));

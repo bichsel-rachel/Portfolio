@@ -18,36 +18,84 @@
 <body>
     <header>
         <nav>
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-            <ul id="primNav" class="hide headNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li class="current"><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.php">Contact</a></li>
-            </ul>
+            <div id="myNav" class="overlay">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div id="primNav" class="overlay-content headNav">
+                   <a href="../index.html">Home</a>
+                    <a href="../resume.html">Resume</a>
+                    <a href="../projects.html" class="current">Projects</a>
+                    <a href="../contact.php">Contact</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
         </nav>
     </header>
 
-    <!-- This div will be a placeholder for a decorative blue line under header -->
-    <main class="projects-main">
-        <div class="flex-item">
-            <img class="images" src="../images/mountain-spoke.jpg" alt="Mock Exhibit Poster">
+       <main class="projects-main">
+			  <img class="images" src="../images/mountain-spoke-desktop.jpg" alt="Mountain Spoke">
+        <div id="project-info">
+            <div>
+                <div id="project-header">
+                    <h1>Mountain Spoke Website</h1>
+                  <a class="projects-link" href="https://bichsel-rachel.github.io/classes/cit230/assignments/final/index.html" target="_blank">View Project</a>
+                </div>
+                <p>This project focused on the frontend of developemnt. It is a responsive website for a made-up biking website called The Mountain Spoke.</p>
+                <h3>Process</h3>
+                <p>Before any coding was done, a site plan was created for the layout and styling of the website. In the site plan, digital sketches of the website were created. A google API was used on the contact page.</p>
+                
+            </div>
+            <div id="icons">
+                <h3>Programs/Software Used</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Adobe Photoshop</li>  
+                </ul>
+            </div>
+        
         </div>
-        <div class="flex-item2">
-            <h1 class="projects-h1">Mountain Spoke Website</h1>
-            <h2>Description</h2>
-            <p>This is a website I created in a college class. It is a mock website for a biking website called The Mountain Spoke. I created all aspects of the website. It is a responsive website.</p>
-            <h2>Programs/Software Used</h2>
-            <p>Photoshop, HTML, CSS, JavaScript</p>
-            <h2>Visit Website</h2>
-            <a class="projects-link" href="https://bichsel-rachel.github.io/classes/cit230/assignments/final/index.html" target="_blank">https://bichsel-rachel.github.io/classes/cit230/assignments/final/index.html</a> <br />
-            <a class="back" href="../projects.html">Back to Projects Page</a>
+        <div class="flex">
+            <figure>
+                <img src="../images/mountain-tours.jpg" alt="tours page">
+                <figcaption>Tours Page</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/mountain-register.jpg" alt="register event">
+                <figcaption>Register Event Page</figcaption>
+            </figure>
+
+        </div> 
+           <div class="flex">
+            <figure>
+                <img src="../images/mountain-sales.jpg" alt="sales page">
+                <figcaption>Sales Page</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/mountain-services.jpg" alt="services page">
+                <figcaption>Services Page</figcaption>
+            </figure>
+
         </div>
-    </main>
+           <div class="flex">
+            <figure>
+                <img src="../images/mountain-contact.jpg" alt="contact page">
+                <figcaption>Contact Page</figcaption>
+            </figure>
+
+        </div>
+            <a class="back" href="../projects.html">Back to Projects</a>
+        </main>
+
     <footer>
-        <% include ../partials/footer.ejs %>   
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2020 Rachel Bichsel. All rights reserved.</p>
     </footer>
-    <script src="hamburger.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 
 </html>

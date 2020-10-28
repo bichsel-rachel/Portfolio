@@ -18,34 +18,54 @@
 <body>
     <header>
         <nav>
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-            <ul id="primNav" class="hide headNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li class="current"><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.php">Contact</a></li>
-            </ul>
+            <div id="myNav" class="overlay">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div id="primNav" class="overlay-content headNav">
+                   <a href="../index.html">Home</a>
+                    <a href="../resume.html">Resume</a>
+                    <a href="../projects.html" class="current">Projects</a>
+                    <a href="../contact.php">Contact</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
         </nav>
     </header>
     <main class="projects-main">
-        <div class="flex-item">
-            <img class="images" src="../images/haunted-app.png" alt="Haunted House App">
+			  <img class="images" src="../images/haunted-house-mobile.jpg" alt="Haunted House App">
+        <div id="project-info">
+            <div>
+                <div id="project-header">
+                    <h1>Haunted House Riddle</h1>
+                  <a class="projects-link" href="https://bichsel-rachel.github.io/classes/cit261/final/index.html" target="_blank">View Project</a>
+                </div>
+                <p>This is a single page mobile web application that was done all through JavaScript functions. The purpose of this project was to apply design principles that are supposed to be viewed through a phone.</p>
+                <h3>Process</h3>
+                <p>The requirement of this project was to create a mobile web application. I decided to create a single page application using only JavaScript functions. A weather API was used to grab the current weather of the inputted zip code. The name of the user is stored in a session throughout the riddle application. The user goes through each level by typing in the correct answer. If the user inputs the incorrect answer, an error message will appear and prevent the user from going onto the next level.</p>
+                
+            </div>
+            <div id="icons">
+                <h3>Programs/Software Used</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Adobe Photoshop</li>  
+                </ul>
+            </div>
+        
         </div>
-        <div class="flex-item2">
-            <h1 class="projects-h1">Haunted House Riddle</h1>
-            <h2>Description</h2>
-            <p>This is a single page mobile web application that was done all through JavaScript functions. The purpose of this project was to apply design principles that are supposed to be viewed through a phone.</p>
-            <h2>Programs/Software Used</h2>
-            <p>Photoshop, HTML, CSS, JavaScript</p>
-            <h2>Link to Website</h2>
-            <a class="projects-link" href="https://bichsel-rachel.github.io/classes/cit261/final/index.html" target="_blank">View Project</a> <br />
-            <a class="back" href="../projects.html">Back to Projects Page</a>
-        </div>
-    </main>
+               
+            <a class="back" href="../projects.html">Back to Projects</a>
+        </main>
     <footer>
-        <% include ../partials/footer.ejs %>   
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+        <p>All Content &copy; Rachel Bichsel</p>
     </footer>
-    <script src="hamburger.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 
 </html>

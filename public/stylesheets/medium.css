@@ -187,8 +187,9 @@
         margin-bottom: 0px;
     }
 
-    #main h2 {
-        top: 100px;
+    div#main h2 {
+        top: -45px;
+        padding: 0px;
     }
 
     @keyframes to-white {

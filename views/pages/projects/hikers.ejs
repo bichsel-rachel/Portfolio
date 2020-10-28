@@ -18,34 +18,63 @@
 <body>
     <header>
         <nav>
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-            <ul id="primNav" class="hide headNav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li class="current"><a href="../projects.html">Projects</a></li>
-                <li><a href="../contact.php">Contact</a></li>
-            </ul>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div id="primNav" class="overlay-content headNav">
+                    <a href="../index.html">Home</a>
+                    <a href="../resume.html">Resume</a>
+                    <a href="../projects.html" class="current">Projects</a>
+                    <a href="../contact.php">Contact</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
         </nav>
     </header>
     <main class="projects-main">
-        <div class="flex-item">
-            <img class="images" src="../images/hikers-n-utah.JPG" alt="Hikers website">
+        <img class="images" src="../images/hikers-desktop.jpg" alt="Hikers website">
+        <div id="project-info">
+            <div>
+                <div id="project-header">
+                    <h1>Hikers N Utah Website</h1>
+                    <a class="projects-link" href="http://hikersnutah.herokuapp.com/portal/assignments/prove5/view/index.php" target="_blank">View Project</a>
+                </div>
+                <p>This project incorporated PHP and databases. This is website were lovers of the outdoors can come to see reviews on hikes in Utah and they also can contact other individuals about used hiking equipment they would like to purchase. The user can either log in or create a new account. Once logged in they see an overview of their account. They can even change their account information, make reviews, or add items to the marketplace. I used sessions to store user input for when they log in and to make sure a non-logged in user cannot access unauthorized pages. </p>
+
+
+            </div>
+            <div id="icons">
+                <h3>Programs/Software Used</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Adobe Photoshop</li>
+                </ul>
+            </div>
+
         </div>
-        <div class="flex-item2">
-            <h1 class="projects-h1">Hikers N Utah Website</h1>
-            <h2>Description</h2>
-            <p>This project incorporated PHP and databases. I used sessions to store user input for when they log in and to make sure a non-logged in user cannot access unauthorized pages. </p>
-            <h2>Programs/Software Used</h2>
-            <p>Photoshop, HTML, CSS, PHP</p>
-            <h2>Link to Website</h2>
-            <a class="projects-link" href="http://hikersnutah.herokuapp.com/portal/assignments/prove5/view/index.php" target="_blank">Visit Project</a> <br />
-            <a class="back" href="../projects.html">Back to Projects Page</a>
+        <div class="flex">
+            <figure>
+                <img src="../images/hikers-update-account.jpg" alt="update account">
+                <figcaption>Adobe XD Mobile</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/hikers-hikes.jpg" alt="hikes">
+                <figcaption>Website Logo</figcaption>
+            </figure>
+
         </div>
+        <a class="back" href="../projects.html">Back to Projects</a>
     </main>
     <footer>
-        <% include ../partials/footer.ejs %>   
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2020 Rachel Bichsel. All rights reserved.</p>
     </footer>
-    <script src="hamburger.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 
 </html>
