@@ -45,13 +45,13 @@ app.get('projects/burger_motion', (req, res) =>
     app.get('projects/cowboys', (req, res) =>
     res.render('pages/projects/cowboys'));
 
-    pp.get('projects/manual_designers', (req, res) =>
+    app.get('projects/manual_designers', (req, res) =>
     res.render('pages/projects/manual-designers'));
 
-    pp.get('projects/pest_control', (req, res) =>
+    app.get('projects/pest_control', (req, res) =>
     res.render('pages/projects/pest-control'));
 
-    pp.get('projects/gresham_fencing', (req, res) =>
+    app.get('projects/gresham_fencing', (req, res) =>
     res.render('pages/projects/gresham_fencing'));
 
    
