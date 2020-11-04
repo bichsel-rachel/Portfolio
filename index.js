@@ -48,7 +48,7 @@ app.get('/projects/burger_motion', (req, res) =>
     app.get('/projects/manual_designers', (req, res) =>
     res.render('pages/projects/manual-designers'));
 
-    app.get('/projects/pest_control', (req, res) =>
+    app.get('/projects/apache_pest_control', (req, res) =>
     res.render('pages/projects/pest-control'));
 
     app.get('/projects/gresham_fencing', (req, res) =>

@@ -5,31 +5,12 @@
 
 <head>
     <title>Rachel Bichsel | Hikers</title>
-    <link href="../styles/main.css" rel="stylesheet">
-
-    <link href="../styles/medium.css" rel="stylesheet">
-
-    <link href="../styles/large.css" rel="stylesheet">
-    <link href="../styles/normalize.css" rel="stylesheet">
-
-    <meta charset="utf-8" />
+    <% include ../../partials/project-head.ejs %>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                <div id="primNav" class="overlay-content headNav">
-                    <a href="../index.html">Home</a>
-                    <a href="../resume.html">Resume</a>
-                    <a href="../projects.html" class="current">Projects</a>
-                    <a href="../contact.php">Contact</a>
-                </div>
-            </div>
-            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
-        </nav>
+        <% include ../../partials/project-nav.ejs %>
     </header>
     <main class="projects-main">
         <img class="images" src="../images/hikers-desktop.jpg" alt="Hikers website">
