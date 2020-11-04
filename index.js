@@ -67,10 +67,11 @@ app.use(express.static(path.join(__dirname, 'public')));
  const PORT = process.env.PORT || 5000;
 // app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
-// Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
+// Use enforce.herHTTPS({ trustProtoHeader: true }) in case you are behind
 // a load balancer (e.g. Heroku). See further comments below
-app.use(enforce.HTTPS());
- 
+//app.use(enforce.HTTPS());
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
+
 http.createServer(app).listen(PORT, function() {
     console.log('Express server listening on port ' + PORT);
 });
