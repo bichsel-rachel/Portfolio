@@ -59,6 +59,13 @@ app.get('/projects/burger_motion', (req, res) =>
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function(req, res, next) {
+    if ((req.get('X-Forwarded-Proto') !== 'https')) {
+      res.redirect('https://' + req.get('Host') + req.url);
+    } else
+      next();
+  });
+
 const PORT = process.env.PORT || 5000 || 18765;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
