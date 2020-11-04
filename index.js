@@ -6,6 +6,9 @@ const controller = require('./controller.js');
 const app = express();
 const { Pool } = require('pg');
 
+var http = require('http');
+var enforce = require('express-sslify');
+
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -61,6 +64,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-const PORT = process.env.PORT || 5000 || 18765;
+//const PORT = process.env.PORT || 5000 || 18765;
+//app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+// Use enforce.HTTPS({ trustProtoHeader: true }) in case you are behind
+// a load balancer (e.g. Heroku). See further comments below
+app.use(enforce.HTTPS());
+ 
+http.createServer(app).listen(app.get('port'), function() {
+    console.log('Express server listening on port ' + app.get('port'));
+});
