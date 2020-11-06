@@ -119,12 +119,18 @@
  #primNav a.active {
      background-color: white;
      color: black;
-
+   
  }
 
 
  #primNav.hide {
      display: none;
+ }
+
+ .website-logo {
+     display: absolute;
+     float: left;
+     top: 70px;
  }
 
  .profile {

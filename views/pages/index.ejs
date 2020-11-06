@@ -3,76 +3,83 @@
 <!--HOME PAGE-->
 <html lang="en-us">
 
-<head>
-    <title>Rachel Bichsel | Home Page</title>
-    <% include ../partials/head.ejs %>
-</head>
+    <head>
+        <title>Rachel Bichsel | Home Page</title>
+        <% include ../partials/head.ejs %>
+    </head>
 
-<body>
-    
-    <header>
+    <body>
 
-        <nav>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <header>
 
-                <div id="primNav" class="overlay-content headNav">
-                    <a href="/" class="current">Home</a>
-                    <a href="/resume">Resume</a>
-                    <a href="#project-main">Projects</a>
-                    <a href="#contact">Contact Me</a>
+            <nav>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- <img class="website-logo" src="images/logo.png" /> -->
+                    <div id="primNav" class="overlay-content headNav">
+                        
+                        <a href="/" class="current">Home</a>
+                        <a href="/resume">Resume</a>
+                        <a href="#project-main">Projects</a>
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
+            </nav>
+        </header>
+        <main>
+            <div id="main">
+                <h1 class="main-h1 top">Hello.</h1>
+                <h1 class="main-h1 bottom">I'm Rachel Bichsel.</h1>
+                <h2>Web Designer and Developer</h2>
+                <div id="box-1"></div>
+                <div id="box-2"></div>
+                <div id="box-3"></div>
+                <div id="box-4"></div>
+                <!---<div id="block-2"></div>--->
+            </div>
+            <div>
+                <h2 id="about">About Me</h2>
+            </div>
+            <div id="project-main">
+                <h2 class="proj-head" id="development">Projects</h2>
+                <div class="grid-container">
+                    <a class="grid-item" class="blurImage" href="/projects/burger_motion"><img src="images/burger-motion.jpg" alt="Nodejs-Surviving Parenthood"></a>
+                    <a class="grid-item" class="blurImage" href="/projects/surviving_parenthood"><img src="images/surviving-parenthood.JPG" alt="Nodejs-Surviving Parenthood"></a>
+                    <a class="grid-item" class="blurImage" href="/projects/hikers"><img src="images/hikers.jpg" alt="Hikers N Utah"></a>
+                    <a class="grid-item" class="blurImage" href="/projects/haunted"><img src="images/haunted-app-f.jpg" alt="Mobile Website"></a>
+                    <a class="grid-item" class="blurImage" href="/projects/mountain-spoke"><img src="images/mountain-spoke.jpg" alt="The mountain spoke"></a>
+                    <a class="grid-item" href="/projects/cowboys.ejs"><img src="images/cowboys.JPG" alt="cowboy's smokehouse"></a>
+
+                </div>
+                <!-- div below is to make sure that these boxes are aligned with boxes in design section-->
+                <!--				<div class="grid-item empty"></div>-->
+
+                <h2 class="proj-head" id="design">WordPress</h2>
+
+                <div class="grid-container">
+                    <a class="grid-item" href="/projects/manual_designers"><img src="" alt="Manual J & D Designers"></a>
+                    <a class="grid-item" href="/projects/apache_pest_control"><img src="" alt="Apache Junction Pest Control"></a>
+                    <a class="grid-item" href="/projects/gresham_fencing"><img src="" alt="Gresham Fencing"></a>
+
                 </div>
             </div>
-            <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
-        </nav>
-    </header>
-    <main>
-    <div id="main">
-        <h1 class="main-h1 top">Hello.</h1>
-        <h1 class="main-h1 bottom">I'm Rachel Bichsel.</h1>
-        <h2>Web Designer and Developer</h2>
-        <div id="box-1"></div>
-        <div id="box-2"></div>
-        <div id="box-3"></div>
-        <div id="box-4"></div>
-        <!---<div id="block-2"></div>--->
-    </div>
-    <div>
-    <h2 id="about">About Me</h2>   
-    </div>
-    <div id="project-main">
-        <h2 class="proj-head" id="development">Projects</h2>
-        <div class="grid-container">
-            <a class="grid-item" class="blurImage" href="/projects/burger_motion"><img src="images/burger-motion.jpg" alt="Nodejs-Surviving Parenthood"></a>
-            <a class="grid-item" class="blurImage" href="/projects/surviving_parenthood"><img src="images/surviving-parenthood.JPG" alt="Nodejs-Surviving Parenthood"></a>
-            <a class="grid-item" class="blurImage" href="/projects/hikers"><img src="images/hikers.jpg" alt="Hikers N Utah"></a>
-            <a class="grid-item" class="blurImage" href="/projects/haunted"><img src="images/haunted-app-f.jpg" alt="Mobile Website"></a>
-            <a class="grid-item" class="blurImage" href="/projects/mountain-spoke"><img src="images/mountain-spoke.jpg" alt="The mountain spoke"></a>
-            <a class="grid-item" href="/projects/cowboys.ejs"><img src="images/cowboys.JPG" alt="cowboy's smokehouse"></a>
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <p>* All fields are required</p>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Name" required/>
+                    <input type="email" id="email" name="email" placeholder="Email" required/>
+                    <textarea name="message" rows="10" cols="30" placeholder="Put message here"></textarea>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <% include ../partials/footer.ejs %>
+        </footer>
 
-        </div>
-        <!-- div below is to make sure that these boxes are aligned with boxes in design section-->
-        <!--				<div class="grid-item empty"></div>-->
-
-        <h2 class="proj-head" id="design">WordPress</h2>
-
-        <div class="grid-container">
-            
-            <a class="grid-item" href="/projects/manual_designers"><img src="" alt="Manual J & D Designers"></a>
-            <a class="grid-item" href="/projects/apache_pest_control"><img src="" alt="Apache Junction Pest Control"></a>
-            <a class="grid-item" href="/projects/gresham_fencing"><img src="" alt="Gresham Fencing"></a>
-
-        </div>
-    </div>
-    <div id="contact">
-        <h2>Contact Me</h2>
-    </div>
-</main>
-    <footer>
-        <% include ../partials/footer.ejs %>   
-    </footer>
-
-    <script src="hamburger.js"></script>
-</body>
+        <script src="hamburger.js"></script>
+    </body>
 
 </html>

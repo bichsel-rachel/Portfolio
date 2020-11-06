@@ -3,62 +3,63 @@
 <!-- PICTURE BOOK PAGE -->
 <html lang="en-us">
 
-<head>
-    <title>Rachel Bichsel | Surviving Parenthood</title>
-    <% include ../../partials/project-head.ejs %>
-</head>
+    <head>
+        <title>Rachel Bichsel | Surviving Parenthood</title>
+        <% include ../../partials/project-head.ejs %>
+    </head>
 
-<body>
-    <header>
-        <% include ../../partials/project-nav.ejs %>
-    </header>
-    <main class="projects-main">
-        <img class="images" src="../images/surviving-parenthood-desktop.jpg" alt="">
-        <div id="project-info">
-            <div>
-                <div id="project-header">
-                    <h1>Surviving Parenthood Website</h1>
-                    <a class="projects-link" href="https://gentle-sierra-19503.herokuapp.com/" target="_blank">View Project</a>
+    <body>
+        <header>
+            <% include ../../partials/project-nav.ejs %>
+        </header>
+        <main class="projects-main">
+            <img class="images" src="../images/surviving-parenthood-desktop.jpg" alt="">
+            <div id="project-info">
+                <div>
+                    <div id="project-header">
+                        <h1>Surviving Parenthood Website</h1>
+                        <a class="projects-link" href="https://gentle-sierra-19503.herokuapp.com/" target="_blank">View Project</a>
+                    </div>
+                    <p>For this project, I used Node.js, to reload the same page with different displayed depending on what is selected. I also incorporated a database into the website. This made it possible for users to add a tip to the current ones already posted.</p>
+                    <h2>Programs Used</h2>
+                    <p>To start out, a name was picked out for the resturant followed by creating a logo on Adobe Illustrator. Then a digital sketch of the index page was created with Adobe XD. This laid the foundation of how the rest of the website would look and flow. The database scheme was then created before starting on the coding. Eight weeks were spent on the backend code and two weeks were spent on the css and frontend.</p>
+
                 </div>
-                <p>For this project, I used Node.js, to reload the same page with different displayed depending on what is selected. I also incorporated a database into the website. This made it possible for users to add a tip to the current ones already posted.</p>
-                <h2>Programs Used</h2>
-                <p>To start out, a name was picked out for the resturant followed by creating a logo on Adobe Illustrator. Then a digital sketch of the index page was created with Adobe XD. This laid the foundation of how the rest of the website would look and flow. The database scheme was then created before starting on the coding. Eight weeks were spent on the backend code and two weeks were spent on the css and frontend.</p>
+                <div id="icons">
+                    <h3>Programs/Software Used</h3>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Postresql</li>
+                    </ul>
+                </div>
+
 
             </div>
-            <div id="icons">
-                <h3>Programs/Software Used</h3>
+            <div class="flex">
+                <figure>
+                    <img src="../images/parenthood-pick-category.jpg" alt="Pick a Category">
+                    <figcaption>Adobe XD Mobile</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/parenthood-category.jpg" alt="category example">
+                    <figcaption>Website Logo</figcaption>
+                </figure>
+
+            </div>
+            <a class="back" href="../projects.html">Back to Projects</a>
+        </main>
+
+        <footer>
+            <nav>
                 <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Node.js</li>
-                    <li>Postresql</li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../contact.php">Contact</a></li>
                 </ul>
-            </div>
-
-
-        </div>
-        <div class="flex">
-            <figure>
-                <img src="../images/parenthood-pick-category.jpg" alt="Pick a Category">
-                <figcaption>Adobe XD Mobile</figcaption>
-            </figure>
-            <figure>
-                <img src="../images/parenthood-category.jpg" alt="category example">
-                <figcaption>Website Logo</figcaption>
-            </figure>
-
-        </div>
-        <a class="back" href="../projects.html">Back to Projects</a>
-    </main>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.php">Contact</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2020 Rachel Bichsel. All rights reserved.</p>
-    </footer>
-    <script src="../scripts/hamburger.js"></script>
-</body></html>
+            </nav>
+            <p>&copy; 2020 Rachel Bichsel. All rights reserved.</p>
+        </footer>
+        <script src="../scripts/hamburger.js"></script>
+    </body>
+</html>
