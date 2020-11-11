@@ -17,7 +17,7 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <!-- <img class="website-logo" src="images/logo.png" /> -->
                     <div id="primNav" class="overlay-content headNav">
-                        
+
                         <a href="/" class="current">Home</a>
                         <a href="/resume">Resume</a>
                         <a href="#project-main">Projects</a>
@@ -58,7 +58,7 @@
                 <h2 class="proj-head" id="design">WordPress</h2>
 
                 <div class="grid-container">
-                    <a class="grid-item" href="/projects/manual_designers"><img src="" alt="Manual J & D Designers"></a>
+                    <a class="grid-item" href="/projects/manual_designers"><img src="/projects/manual/designers_icon.jpg" alt="Manual J & D Designers"></a>
                     <a class="grid-item" href="/projects/apache_pest_control"><img src="" alt="Apache Junction Pest Control"></a>
                     <a class="grid-item" href="/projects/gresham_fencing"><img src="" alt="Gresham Fencing"></a>
 
@@ -71,14 +71,18 @@
                     <input type="text" id="name" name="name" placeholder="Name" required/>
                     <input type="email" id="email" name="email" placeholder="Email" required/>
                     <textarea name="message" rows="10" cols="30" placeholder="Put message here"></textarea>
-                    <input type="submit" value="Submit"/>
+                    <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>
             </div>
         </main>
         <footer>
             <% include ../partials/footer.ejs %>
         </footer>
-
+        <script>
+            function onSubmit(token) {
+                document.getElementById("demo-form").submit();
+            }
+        </script>
         <script src="hamburger.js"></script>
     </body>
 
