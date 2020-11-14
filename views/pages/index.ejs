@@ -17,11 +17,9 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <!-- <img class="website-logo" src="images/logo.png" /> -->
                     <div id="primNav" class="overlay-content headNav">
-
                         <a href="/" class="current">Home</a>
                         <a href="/resume">Resume</a>
                         <a href="#project-main">Projects</a>
-                        <a href="#contact">Contact Me</a>
                     </div>
                 </div>
                 <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
@@ -38,19 +36,40 @@
                 <div id="box-4"></div>
                 <!---<div id="block-2"></div>--->
             </div>
-            <div>
-                <h2 id="about">About Me</h2>
-            </div>
+            
             <div id="project-main">
                 <h2 class="proj-head" id="development">Projects</h2>
                 <div class="grid-container">
-                    <a class="grid-item" class="blurImage" href="/projects/burger_motion"><img src="images/burger-motion.jpg" alt="Nodejs-Surviving Parenthood"></a>
-                    <a class="grid-item" class="blurImage" href="/projects/surviving_parenthood"><img src="images/surviving-parenthood.JPG" alt="Nodejs-Surviving Parenthood"></a>
-                    <a class="grid-item" class="blurImage" href="/projects/hikers"><img src="images/hikers.jpg" alt="Hikers N Utah"></a>
-                    <a class="grid-item" class="blurImage" href="/projects/haunted"><img src="images/haunted-app-f.jpg" alt="Mobile Website"></a>
-                    <a class="grid-item" class="blurImage" href="/projects/mountain-spoke"><img src="images/mountain-spoke.jpg" alt="The mountain spoke"></a>
-                    <a class="grid-item" href="/projects/cowboys.ejs"><img src="images/cowboys.JPG" alt="cowboy's smokehouse"></a>
-
+                    <div>
+                        <a class="grid-item" href="/projects/burger_motion"><img src="images/burger-motion.jpg" alt="Nodejs-Surviving Parenthood"></a>
+                        <h3>Burger Motion Website</h3>
+                        <h5>Node JS | Express | EJS | PostreSQL | Adobe XD | Adobe Illustrator</h5>
+                    </div>
+                    <div>
+                        <a class="grid-item" href="/projects/surviving_parenthood"><img src="images/surviving-parenthood.JPG" alt="Nodejs-Surviving Parenthood"></a>
+                        <h3>Surviving Parenthood Website</h3>
+                        <h5>Node JS | Express | EJS | PostreSQL</h5>
+                    </div>
+                    <div>
+                        <a class="grid-item" href="/projects/hikers"><img src="images/hikers.jpg" alt="Hikers N Utah"></a>
+                        <h3>Hikers N Utah Website</h3>
+                        <h5>PHP | PostreSQL</h5>
+                    </div>
+                    <div>
+                        <a class="grid-item" href="/projects/haunted"><img src="images/haunted-app-f.jpg" alt="Mobile Website"></a>
+                        <h3>Haunted House Riddles Mobile Web Application</h3>
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div>
+                        <a class="grid-item" href="/projects/mountain-spoke"><img src="images/mountain-spoke.jpg" alt="The mountain spoke"></a>
+                        <h3>Mountain Spoke Website</h3>
+                        <h5>JavaScript | jQuery</h5>
+                    </div>
+                    <div>
+                        <a class="grid-item" href="/projects/cowboys.ejs"><img src="images/cowboys.JPG" alt="cowboy's smokehouse"></a>
+                        <h3>Cowboy's Smokehouse Interactive Design</h3>
+                        <h5>Adobe XD</h5>
+                    </div>
                 </div>
                 <!-- div below is to make sure that these boxes are aligned with boxes in design section-->
                 <!--				<div class="grid-item empty"></div>-->
@@ -64,7 +83,7 @@
 
                 </div>
             </div>
-            <div id="contact">
+            <!-- <div id="contact">
                 <h2>Contact Me</h2>
                 <p>* All fields are required</p>
                 <form>
@@ -73,7 +92,7 @@
                     <textarea name="message" rows="10" cols="30" placeholder="Put message here"></textarea>
                     <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>
-            </div>
+            </div> -->
         </main>
         <footer>
             <% include ../partials/footer.ejs %>

@@ -282,7 +282,7 @@
  #development {
      background-color: #5AB9EA;
      width: 100%;
-
+    margin-top: 100px;
  }
 
  #design {
@@ -445,10 +445,10 @@ figcaption {
  }
 
 
+ footer nav {
+    margin-bottom: 30px;
+}
 
- footer nav ul {
-     margin-bottom: 10px;
- }
 
  footer nav li {
      display: inline;
@@ -456,13 +456,14 @@ figcaption {
      letter-spacing: .07em;
 
      list-style: none;
-
-     margin-right: 30px;
  }
 
  footer a {
      text-decoration: none;
      color: black;
+     margin-right: 15px;
+     margin-left: 15px;
+     font-size: 18px;
  }
 
 footer a:hover {
@@ -471,6 +472,6 @@ footer a:hover {
 
  footer p {
      padding-top: 10px;
-
+    font-size: 14px;
      letter-spacing: .07em;
  }
