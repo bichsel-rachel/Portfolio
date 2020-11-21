@@ -30,10 +30,10 @@ app.get('/', (req, res) =>
     res.render('pages/resume'));
 
 //Project Pages
-app.get('/projects/burger_motion', (req, res) =>
+app.get('/projects/burger-motion', (req, res) =>
     res.render('pages/projects/burger-motion'));
 
-    app.get('/projects/surviving_parenthood', (req, res) =>
+    app.get('/projects/surviving-parenthood', (req, res) =>
     res.render('pages/projects/surviving-parenthood'));
 
     app.get('/projects/hikers', (req, res) =>
@@ -42,16 +42,16 @@ app.get('/projects/burger_motion', (req, res) =>
     app.get('/projects/haunted', (req, res) =>
     res.render('pages/projects/haunted'));
 
-    app.get('/projects/mountain_spoke', (req, res) =>
+    app.get('/projects/mountain-spoke', (req, res) =>
     res.render('pages/projects/mountain-spoke'));
 
     app.get('/projects/cowboys', (req, res) =>
     res.render('pages/projects/cowboys'));
 
-    app.get('/projects/manual_designers', (req, res) =>
+    app.get('/projects/manual-designers', (req, res) =>
     res.render('pages/projects/manual-designers'));
 
-    app.get('/projects/apache_pest_control', (req, res) =>
+    app.get('/projects/apache-pest-control', (req, res) =>
     res.render('pages/projects/pest-control'));
 
     app.get('/projects/gresham_fencing', (req, res) =>
