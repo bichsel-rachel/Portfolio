@@ -52,7 +52,7 @@ app.get('/projects/burger-motion', (req, res) =>
     res.render('pages/projects/manual-designers'));
 
     app.get('/projects/apache-pest-control', (req, res) =>
-    res.render('pages/projects/pest-control'));
+    res.render('pages/projects/apache-pest-control'));
 
     app.get('/projects/gresham-fencing', (req, res) =>
     res.render('pages/projects/gresham_fencing'));
