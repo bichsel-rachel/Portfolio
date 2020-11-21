@@ -54,7 +54,7 @@ app.get('/projects/burger-motion', (req, res) =>
     app.get('/projects/apache-pest-control', (req, res) =>
     res.render('pages/projects/pest-control'));
 
-    app.get('/projects/gresham_fencing', (req, res) =>
+    app.get('/projects/gresham-fencing', (req, res) =>
     res.render('pages/projects/gresham_fencing'));
 
    
