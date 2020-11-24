@@ -54,7 +54,7 @@
     top: 0;
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    
   }
   
   /* Position the content inside the overlay */
@@ -99,33 +99,7 @@
     }
   } */
 
- /* nav {
-
-     align-content: stretch;
-
- }
-
- #primNav {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
- }
-
- #primNav a {
-     display: flex;
-     justify-content: space-around;
-     padding: .9rem 2%;
-     text-decoration: none;
-     color: black;
- }
-
-
- #primNav a.active {
-     background-color: white;
-     color: black;
-   
- } */
-
+ 
  .website-logo {
      display: absolute;
      float: left;
@@ -151,12 +125,12 @@
 
  .top {
      top: 0px;
-     font-size: 5em;
+     font-size: 7em;
      z-index: 3;
      animation-name: to-white;
      animation-duration: 5s;
      animation-fill-mode: forwards;
-     margin-top: 25px;
+     margin-top: 10px;
  }
 
  #main h2 {
@@ -183,7 +157,7 @@
      z-index: 1;
      right: 0px;
      background-color: #8860D0;
-     height: 70px;
+     height: 90px;
      width: 90%;
      animation-name: box-one;
      animation-duration: 5s;
@@ -203,14 +177,14 @@
 
  #box-2 {
      position: absolute;
-     top: 205px;
+     top: 230px;
      z-index: 1;
      left: 0px;
      background-color: #5AB9EA;
      height: 20px;
-     width: 280px;
+     width: 300px;
      animation-name: box-two;
-     animation-duration: 7s;
+     animation-duration: 6s;
  }
 
  @keyframes box-two {
@@ -225,7 +199,7 @@
 
  #box-3 {
      position: absolute;
-     top: 280px;
+     top: 320px;
      z-index: 1;
      left: 0px;
      background-color: #8860D0;
@@ -249,7 +223,7 @@
 
  #box-4 {
      position: absolute;
-     top: 340px;
+     top: 390px;
      z-index: 1;
      background-color: #5AB9EA;
      height: 30px;
@@ -287,7 +261,7 @@
  #development {
      background-color: #5AB9EA;
      width: 100%;
-    margin-top: 100 px;
+    margin-top: 115px;
  }
 
  #design {

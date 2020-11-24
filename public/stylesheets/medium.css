@@ -5,11 +5,29 @@
         display: none;
     }
 
-    #primNav.hide {
+    #myNav {
         display: block;
+    } 
+
+    .closebtn {
+        left: -1999px;
     }
+    
+    .overlay {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: white; 
+      }
 
-
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color:black;
+        display: block; /* Display block instead of inline */
+      }
 
     .headNav {
         margin-bottom: 10px;
@@ -146,6 +164,11 @@
         margin-top: 0px;
     }
 
+    .overlay-content {
+        top: none;
+        margin-top: 0px;
+      }
+
     #primNav li a {
         display: flex;
         padding: .3rem 2%;
@@ -179,12 +202,13 @@
 
     .top {
         font-size: 12em;
-        top: 10px;
+        top: 15px;
         right: 5px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
         margin-bottom: 0px;
+        margin-top: 55px;
     }
 
     div#main h2 {
@@ -230,11 +254,13 @@
 
     @keyframes box-one {
         0% {
-            transform: translateX(100%);
+            transform: scaleX(0%);
+            width: 0%;
         }
-
+    
         100% {
-            transform: translateX(0);
+            transform: scaleX(-100%);
+            width: 650px;
         }
     }
 
@@ -253,7 +279,7 @@
         0% {
             transform: translateX(-100%);
         }
-
+   
         100% {
             transform: translateX(0);
         }
@@ -273,11 +299,13 @@
 
     @keyframes box-three {
         0% {
-            transform: translateX(100%);
+            transform: scaleX(0%);
+            width: 0%;
         }
-
+   
         100% {
-            transform: translateX(0);
+            transform: scaleX(-100%);
+            width: 80%;
         }
     }
 
@@ -294,11 +322,13 @@
 
     @keyframes box-four {
         0% {
-            transform: translateX(-100%);
+            transform: scaleX(0%);
+            width: 0px;
         }
-
+    
         100% {
-            transform: translateX(0);
+            transform: scaleX(100%);
+            width: 605px;
         }
     }
 

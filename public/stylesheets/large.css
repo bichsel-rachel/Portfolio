@@ -69,7 +69,7 @@
 
     .top {
         font-size: 15em;
-        top: -10px;
+        top: 0px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
@@ -118,7 +118,17 @@
         animation-duration: 5s;
     }
 
+    @keyframes box-one {
+        0% {
+            transform: scaleX(0%);
+            width: 0%;
+        }
     
+        100% {
+            transform: scaleX(-100%);
+            width: 95%;
+        }
+    }
 
     #box-2 {
         position: absolute;
@@ -157,6 +167,17 @@
         animation-duration: 6s;
     }
 
+    @keyframes box-four {
+        0% {
+            transform: scaleX(0%);
+            width: 0;
+        }
+    
+        100% {
+            transform: scaleX(100%);
+            width: 70%;
+        }
+    }
 
 
 
