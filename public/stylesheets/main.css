@@ -190,13 +190,15 @@
  }
 
  @keyframes box-one {
-     0% {
-         transform: translateX(100%);
-     }
+    0% {
+        transform: scaleX(0%);
+        width: 0%;
+    }
 
-     100% {
-         transform: translateX(0);
-     }
+    100% {
+        transform: scaleX(-100%);
+        width: 90%;
+    }
  }
 
  #box-2 {
@@ -235,11 +237,13 @@
 
  @keyframes box-three {
      0% {
-         transform: translateX(-100%);
+         transform: scaleX(0%);
+         width: 0%;
      }
 
      100% {
-         transform: translateX(0);
+         transform: scaleX(-100%);
+         width: 100%;
      }
  }
 
@@ -256,13 +260,15 @@
  }
 
  @keyframes box-four {
-     0% {
-         transform: translateX(100%);
-     }
+    0% {
+        transform: scaleX(0%);
+        width: 0%;
+    }
 
-     100% {
-         transform: translateX(0);
-     }
+    100% {
+        transform: scaleX(100%);
+        width: 60%;
+    }
  }
 
 
