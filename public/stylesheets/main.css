@@ -158,8 +158,8 @@
      z-index: 1;
      right: 0px;
      background-color: #8860D0;
-     height: 165px;
-     width: 95%;
+     height: 145px;
+     width: 100%;
      animation-name: box-one;
      animation-duration: 5s;
  }
@@ -172,20 +172,20 @@
 
     100% {
         transform: scaleX(-100%);
-        width: 95%;
+        width: 100%;
     }
  }
 
  #box-2 {
      position: absolute;
-     top: 305px;
+     top: 285px;
      z-index: 1;
      left: 0px;
      background-color: #5AB9EA;
      height: 20px;
-     width: 300px;
+     width: 75%;
      animation-name: box-two;
-     animation-duration: 6s;
+     animation-duration: 5s;
  }
 
  @keyframes box-two {
@@ -200,7 +200,7 @@
 
  #box-3 {
      position: absolute;
-     top: 400px;
+     top: 375px;
      z-index: 1;
      left: 0px;
      background-color: #8860D0;
@@ -224,7 +224,7 @@
 
  #box-4 {
      position: absolute;
-     top: 450px;
+     top: 430px;
      z-index: 1;
      background-color: #5AB9EA;
      height: 30px;
