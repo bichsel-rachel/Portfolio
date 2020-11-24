@@ -52,7 +52,7 @@
     z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     
   }
@@ -71,14 +71,14 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: black;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #636363;
   }
   
   /* Position the close button (top right corner) */
@@ -115,17 +115,17 @@
 
 
  .main-h1 {
-     font-size: 2.3em;
+     font-size: 3em;
      z-index: 3;
      position: relative;
      margin: 0px;
      padding: 0px;
-     top: -20px;
+     top: -55px;
  }
 
  .top {
      top: 0px;
-     font-size: 7em;
+     font-size: 11em;
      z-index: 3;
      animation-name: to-white;
      animation-duration: 5s;
@@ -137,8 +137,9 @@
      position: relative;
      color: white;
      z-index: 3;
-     top: -23px;
+     top: -70px;
      margin-top: 0px;
+     font-size: 1.75em;
  }
 
  @keyframes to-white {
@@ -157,8 +158,8 @@
      z-index: 1;
      right: 0px;
      background-color: #8860D0;
-     height: 90px;
-     width: 90%;
+     height: 165px;
+     width: 95%;
      animation-name: box-one;
      animation-duration: 5s;
  }
@@ -171,13 +172,13 @@
 
     100% {
         transform: scaleX(-100%);
-        width: 90%;
+        width: 95%;
     }
  }
 
  #box-2 {
      position: absolute;
-     top: 230px;
+     top: 305px;
      z-index: 1;
      left: 0px;
      background-color: #5AB9EA;
@@ -199,7 +200,7 @@
 
  #box-3 {
      position: absolute;
-     top: 320px;
+     top: 400px;
      z-index: 1;
      left: 0px;
      background-color: #8860D0;
@@ -223,7 +224,7 @@
 
  #box-4 {
      position: absolute;
-     top: 390px;
+     top: 450px;
      z-index: 1;
      background-color: #5AB9EA;
      height: 30px;
