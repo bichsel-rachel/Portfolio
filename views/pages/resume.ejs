@@ -9,7 +9,19 @@
 
     <body>
         <header>
-            <% include ../partials/nav.ejs %>
+
+            <nav>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <div id="primNav" class="overlay-content headNav">
+                        <a href="/" class="current">Home</a>
+                        <a href="/resume">Resume</a>
+                        <a href="/#project-main">Projects</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" onclick="openNav()">&#9776;</button>
+            </nav>
         </header>
 </html></header><main>
 <div class="resume">

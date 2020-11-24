@@ -429,4 +429,8 @@
         display: row;
         justify-content: space-around;
     }
+
+    .projects-main{
+        margin-top: 50px;
+    }
 }
