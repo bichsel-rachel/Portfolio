@@ -1,4 +1,9 @@
-function toggleMenu() {
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
 
-  document.getElementById("primNav").classList.toggle("hide");
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
 }

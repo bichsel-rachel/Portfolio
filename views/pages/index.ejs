@@ -11,19 +11,7 @@
     <body>
 
         <header>
-
-            <nav>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <!-- <img class="website-logo" src="images/logo.png" /> -->
-                    <div id="primNav" class="overlay-content headNav">
-                        <a href="/" class="current">Home</a>
-                        <a href="/resume">Resume</a>
-                        <a href="#project-main">Projects</a>
-                    </div>
-                </div>
-                <button class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
-            </nav>
+            <% include ../partials/nav.ejs %>
         </header>
         <main>
             <div id="main">
@@ -34,7 +22,6 @@
                 <div id="box-2"></div>
                 <div id="box-3"></div>
                 <div id="box-4"></div>
-                <!---<div id="block-2"></div>--->
             </div>
             
             <div id="project-main">
