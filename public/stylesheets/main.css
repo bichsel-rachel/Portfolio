@@ -345,7 +345,17 @@
 }
 
  /*==============PROJECT FILES============*/
-figcaption {
+ .projects-main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#project-info p,
+    #project-info li {
+        text-align: left;
+    }
+    
+ figcaption {
     text-align: left;
     color: grey;
     font-size: 12px;
