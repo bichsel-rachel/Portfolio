@@ -254,7 +254,7 @@
  }
 
 
- #project-main {
+ .project-main {
      padding-left: 10%;
      padding-right: 10%;
  }
@@ -263,6 +263,7 @@
      background-color: #5AB9EA;
      width: 100%;
     margin-top: 115px;
+    font-size: 2em;
  }
 
  #design {
@@ -290,7 +291,13 @@
 
 
  }
+ .grid-container h3 {
+    margin-bottom: 5px;
+}
 
+ .grid-container h5 {
+     margin-top: 0px;
+ }
 
  .grid-item:hover {
      box-shadow: 1px 1px 15px 1px #DCDCDC, 1px 1px 15px 1px #DCDCDC;

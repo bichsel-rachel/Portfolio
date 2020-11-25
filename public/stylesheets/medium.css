@@ -381,6 +381,18 @@
     }
 
 
+    /*==============HOME PAGE PROJECTS============*/
+    #development {
+        font-size: 3em;
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    #design {
+        font-size: 3em;
+        margin-left: 10%;
+        padding-right: 15%;
+    }
 
     /*==============PROJECTS-FILES============*/
     .flex {
