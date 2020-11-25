@@ -392,6 +392,9 @@
      flex-shrink: 0;
  }
 
+ .left-align {
+     text-align: left;
+ }
 
 /*==============CONTACT============*/
 #contact {
