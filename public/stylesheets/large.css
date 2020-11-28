@@ -1,9 +1,8 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 
 
     body {
-        font-family: Mukta, sans-serif;
 
         margin: 0px;
 
@@ -257,22 +256,19 @@
 
     }
 
-   
-    #development, #design {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 5em;
-            
-        }
-
 
     .proj-head {
         margin-bottom: 30px;
-        padding: 10px 0px 10px 0px;
         margin-top: 5px;
-        font-size: 2.5em;
-        text-align: left;
-        width: 300px;
+        width: 90%;
+        height: 210px;
+    }
+
+    .proj-head h2{
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 9em;
     }
 
     .grid-container {

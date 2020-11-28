@@ -203,7 +203,7 @@
     .top {
         font-size: 12em;
         top: 15px;
-        right: 5px;
+        right: 20px;
         animation-name: to-white;
         animation-duration: 5s;
         animation-fill-mode: forwards;
@@ -247,7 +247,7 @@
         top: 200px;
         z-index: 1;
         height: 150px;
-        width: 650px;
+        width: 95%;
         animation-name: box-one;
         animation-duration: 5s;
     }
@@ -260,7 +260,7 @@
     
         100% {
             transform: scaleX(-100%);
-            width: 650px;
+            width: 95%;
         }
     }
 
@@ -382,16 +382,19 @@
 
 
     /*==============HOME PAGE PROJECTS============*/
-    #development {
-        font-size: 3em;
-        width: 90%;
-        padding-left: 10%;
+    
+    .proj-head {
+        margin-bottom: 30px;
+        margin-top: 5px;
+        height: 100px;
     }
 
-    #design {
-        font-size: 3em;
-        margin-left: 10%;
-        padding-right: 15%;
+    .proj-head h2{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 5.5em;
+        text-align: left;
+        padding-left: 10%;
     }
 
     /*==============PROJECTS-FILES============*/
