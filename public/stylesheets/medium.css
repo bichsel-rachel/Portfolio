@@ -386,15 +386,13 @@
     .proj-head {
         margin-bottom: 30px;
         margin-top: 5px;
-        height: 100px;
+        height: 80px;
     }
 
     .proj-head h2{
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 5.5em;
-        text-align: left;
-        padding-left: 10%;
+        font-size: 3em;
     }
 
     /*==============PROJECTS-FILES============*/
